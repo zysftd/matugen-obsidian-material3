@@ -1,4 +1,4 @@
-[Русский](README.ru.md) · [中文](README.zh.md) · [Français](README.fr.md) · [English](README.md)
+[中文](README.zh.md) · [Français](README.fr.md) · [English](README.md)
 
 # Matugen Obsidian Material 3
 
