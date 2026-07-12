@@ -1,0 +1,9 @@
+# Matugen 配置示例 — Obsidian Material 3
+# 将此片段添加到 ~/.config/matugen/config.toml
+
+[templates.Obsidian]
+input_path = '~/.config/matugen/templates/obsidian-minimal-matugen-colors.css'
+output_path = '/path/to/your/vault/.obsidian/snippets/obsidian-material3.css'
+
+# 可选：为 Obsidian 单独指定配色类型（比全局配置更鲜艳）
+# type = "SchemeVibrant"
