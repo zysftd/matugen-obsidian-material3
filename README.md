@@ -1,3 +1,5 @@
+[Русский](README.ru.md) · [中文](README.zh.md) · [Français](README.fr.md)
+
 # Matugen Obsidian Material 3
 
 One command to make Obsidian match your wallpaper — a Material You matugen template.
