@@ -1,26 +1,26 @@
 # Matugen Obsidian Material 3
 
-一键让 Obsidian 跟随壁纸配色 — 基于 Material You 的 Matugen 模板。
+One command to make Obsidian match your wallpaper — a Material You matugen template.
 
-## 效果
+## How it works
 
-运行 `matugen image <壁纸>` 后，Obsidian 自动套用壁纸的 Material You 配色方案，包含完整的：
+Run `matugen image <wallpaper>`, and Obsidian picks up the wallpaper's Material You color scheme with full:
 
-- 暗色/亮色双模式
-- 139+ CSS 样式规则（按钮、开关、导航、菜单、输入框、搜索、滑块、移动端界面等）
-- 98 个 Material Design 3 颜色令牌
+- Dark / light dual mode
+- 139+ CSS rules (buttons, switches, nav, menus, inputs, search, sliders, mobile, etc.)
+- 98 Material Design 3 color tokens
 
-## 安装
+## Installation
 
-### 1. 添加模板
+### 1. Add the template
 
 ```bash
 cp templates/obsidian-minimal-matugen-colors.css ~/.config/matugen/templates/
 ```
 
-### 2. 配置 Matugen
+### 2. Configure matugen
 
-编辑 `~/.config/matugen/config.toml`，添加：
+Edit `~/.config/matugen/config.toml` and add:
 
 ```toml
 [templates.Obsidian]
@@ -28,23 +28,23 @@ input_path = '~/.config/matugen/templates/obsidian-minimal-matugen-colors.css'
 output_path = '/path/to/your/vault/.obsidian/snippets/obsidian-material3.css'
 ```
 
-参考 `config/matugen-config-example.toml`。
+See `config/matugen-config-example.toml` for reference.
 
-### 3. 生成配色
+### 3. Generate colors
 
 ```bash
 matugen image /path/to/wallpaper.jpg
 ```
 
-### 4. 在 Obsidian 中启用
+### 4. Enable in Obsidian
 
-设置 → 外观 → CSS 代码片段 → 启用 `obsidian-material3.css`
+Settings → Appearance → CSS snippets → toggle `obsidian-material3.css`
 
-> 如果有多个知识库，每个库的 `.obsidian/snippets/` 都要添加并配置一个单独的 `[templates.Obsidian-XXX]` 条目。
+> If you have multiple vaults, copy the template to each vault's `.obsidian/snippets/` and add a separate `[templates.Obsidian-XXX]` entry for each.
 
-## 调色建议
+## Color scheme tips
 
-如果生成的配色对比度不够（常见于浅色壁纸），可以在 Matugen 全局配置中调整：
+If the generated colors lack contrast (common with light wallpapers), adjust the global matugen config:
 
 ```toml
 [config]
@@ -52,19 +52,19 @@ type = "SchemeVibrant"
 contrast = 1.0
 ```
 
-| 类型 | 效果 |
+| Type | Effect |
 |---|---|
-| `SchemeTonalSpot` | 柔和（默认） |
-| `SchemeVibrant` | 鲜艳 |
-| `SchemeExpressive` | 富有表现力 |
-| `SchemeFruitSalad` | 多彩活泼 |
+| `SchemeTonalSpot` | Soft (default) |
+| `SchemeVibrant` | Vibrant |
+| `SchemeExpressive` | Expressive |
+| `SchemeFruitSalad` | Colorful & playful |
 
-## 致谢
+## Credits
 
-- [Material 3 Obsidian Theme](https://github.com/HarmfulBreeze/obsidian-material-3) by HarmfulBreeze — CSS 样式规则来源
-- [Matugen](https://github.com/InioX/matugen) by InioX — Material You 颜色生成引擎
-- [matugen-themes](https://github.com/InioX/matugen-themes) — 模板参考
+- [Material 3 Obsidian Theme](https://github.com/HarmfulBreeze/obsidian-material-3) by HarmfulBreeze — source of the CSS rules
+- [Matugen](https://github.com/InioX/matugen) by InioX — Material You color engine
+- [matugen-themes](https://github.com/InioX/matugen-themes) — template reference
 
-## 声明
+## Disclaimer
 
-本项目由 AI（DeepSeek / opencode）辅助生成，原始 CSS 规则基于 [Material 3 Obsidian Theme](https://github.com/HarmfulBreeze/obsidian-material-3) 转换适配。
+This project was generated with the assistance of AI (DeepSeek / opencode). The original CSS rules are adapted from the [Material 3 Obsidian Theme](https://github.com/HarmfulBreeze/obsidian-material-3).
